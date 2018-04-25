@@ -420,10 +420,11 @@ public class FOVERecorder0 : MonoBehaviour
                         datum.rightGaze.origin.z.ToString(vPrecision),
                         datum.rightGaze.direction.x.ToString(vPrecision),
                         datum.rightGaze.direction.y.ToString(vPrecision),
-                        datum.rightGaze.direction.z.ToString(vPrecision));
-                        datum.isLookingAtObject.ToString();// is looking at object 1493
-                        datum.shapeName.ToString(); // object identification 1493
-                        datum.shapeLocation.ToString(); // object location 1493
+                        datum.rightGaze.direction.z.ToString(vPrecision),
+                        datum.isLookingAtObject.ToString(),// is looking at object 1493
+                        datum.shapeName, // object identification 1493
+                        datum.shapeLocation.ToString() // object location 1493
+                    );
                 }
 
                 File.AppendAllText(fileName, text);
